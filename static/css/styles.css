@@ -1,0 +1,66 @@
+.navbar{
+    background: #2bd99b;
+}
+
+.brand{
+    margin-left: 10%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.brand h3{
+    color: #eee;
+
+}
+
+.container{
+    margin-top: 50px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Nerko One', cursive;
+}
+
+.search-bar{
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+input[type="text"]::placeholder {                    
+    text-align: center; 
+    font-family: 'Nunito', sans-serif;
+} 
+
+.details{
+    color: black;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2em;
+    font-weight: 550;
+
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+ }

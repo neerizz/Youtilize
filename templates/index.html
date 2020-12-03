@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="icon" href="/static/images/youtilize.png" type="image/gif" sizes="32x32">
+
+    <title>Youtube Playlist Analyzer</title>
+</head>
+<body>
+    <div class="page-content">
+            <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand brand" href="#"><h3>Youtilize</h3></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <!-- <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Features</a>
+          </div> -->
+        </div>
+      </nav>
+
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="yt-Image">
+              <img src="/static/images/playlist .png" alt="Youtilize">
+            </div>
+          </div>
+        </div>      
+      </div>
+
+      <div class="description">
+        <h2>Youtilize - Youtube Playlist Analyzer</h2>
+        <p style="font-weight: bold;">Get the total duration of youtube playlist at different speeds</p>
+      </div>
+
+      <!-- Search bar -->
+      <form action="/" method="POST">
+        <div class="input-group mb-3 search-bar">
+           <input type="text" class="form-control" name="list-url" placeholder="Paste the URL" aria-label="Paste the URL" aria-describedby="basic-addon2" required>
+            <div class="input-group-append">
+             <button class="btn btn-outline-secondary" name="submit" type="submit">Analyze</button>
+            </div>
+        </div>
+      </form>    
+      
+      <div class="details">
+        {% if data %}
+          {% for item in data %}
+              <p>{{item}}</p>
+          {% endfor %}
+        {% endif %}
+      </div>
+      
+      <div class="footer">
+        <p style="font-weight: bold;">Made by - Niraj Ratnawat</p>
+        <a href="#" onclick='window.open("https://github.com/Yoddha99");return false;'><img src="/static/images/github-logo.png" alt="Github"></a>
+        <a href="#" onclick='window.open("https://www.linkedin.com/in/geekfreak/");return false;'><img src="/static/images/linkedin.png" height="32px" style="margin-left: 10px;" alt="Linkedin"></a>
+        <p></p>
+      </div>
+    </div>
+    
+</body>
+</html>
